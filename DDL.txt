@@ -1,0 +1,16 @@
+creacion de la DB:
+npx sequelize-cli db:create
+
+creacion de tablas:
+npx sequelize-cli model:generate --name User --attributes username:string,email:string,password:string
+
+npx sequelize-cli model:generate --name Comment --attributes text:string
+
+npx sequelize-cli model:generate --name LikeComment --attributes user_id:integer,comment_id:integer
+
+npx sequelize-cli model:generate --name Like --attributes user_id:integer,recipe_id:integer
+
+npx sequelize-cli model:generate --name RecipeFavorite --attributes user_id:integer,recipe_id:integer
+
+migraciones:
+npx sequelize-cli db:migrate
