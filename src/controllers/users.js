@@ -9,7 +9,6 @@ async function getUsers() {
 }
 
 async function getUserById(id) {
-    console.log(id);
     return await modeloUsuario.findByPk(id);
 }
 
@@ -42,7 +41,6 @@ async function findByCredentials(email, password) {
 }
 
 function generateToken(user) {
-    console.log(process.env.CLAVETOKEN);
     const token = jwt.sign({ id: user.id }, process.env.CLAVETOKEN, { expiresIn: '2h' });
     return token;
 }
