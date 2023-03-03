@@ -47,22 +47,4 @@ function generateToken(user) {
     return token;
 }
 
-async function addRecipeFavorites(userId, recipeId){
-    if(await modeloFavoritos.findOne({ where: { recipe_id: recipeId } })){
-        throw new Error('Receta ya agregada');
-    }
-    return modeloFavoritos.create({user_id: userId, recipe_id: recipeId});
-}
-
-async function removeRecipeFavorites(userId, recipeId){
-    return modeloFavoritos.destroy({ where: { recipe_id: recipeId, user_id: userId}  });
-}
-
-async function getFavorites(userId){
-    const favorites = await modeloFavoritos.findAll({ where: { user_id: userId}  });
-    const result = [];
-    favorites.map( favorite => result.push(favorite.recipe_id));
-    return {favorites: result};
-}
-
-module.exports = { getUsers, getUserById, addUser, updateUserPassword, findByCredentials, generateToken, addRecipeFavorites, removeRecipeFavorites, getFavorites };
+module.exports = { getUsers, getUserById, addUser, updateUserPassword, findByCredentials, generateToken };

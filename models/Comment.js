@@ -14,10 +14,16 @@ module.exports = (sequelize, DataTypes) => {
       Comment.hasMany(models.LikeComment,{
         foreignKey: 'comment_id'
       });
+      Comment.belongsTo(models.User, {
+          foreignKey: 'user_id',
+          targetKey: 'id'
+      });
     }
   }
   Comment.init({
-    text: DataTypes.STRING
+    text: DataTypes.STRING,
+    user_id: DataTypes.INTEGER,
+    recipe_id: DataTypes.INTEGER,
   }, {
     sequelize,
     modelName: 'Comment',
