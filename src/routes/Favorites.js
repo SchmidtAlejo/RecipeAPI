@@ -27,4 +27,12 @@ router.get("/", decodeToken, async (req, res) => {
   }
 });
 
+router.get("/:id", decodeToken, async (req, res) => {
+  try {
+    res.json(await controller.getFavoriteRecipe(req.id, req.params.id));
+  } catch (error) {
+    res.status(401).send(error.message);
+  }
+});
+
 module.exports = router;

@@ -1,7 +1,7 @@
 var express = require("express");
 var router = express.Router();
-const controller = require("../controllers/Comment");
-const { decodeToken } = require("./../../middleware/TokenMiddleware");
+const controller = require("../controllers/Comments");
+const { decodeToken } = require("../../middleware/TokenMiddleware");
 
 router.post("/", decodeToken, async (req, res) => {
   try {

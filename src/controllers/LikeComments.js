@@ -1,5 +1,5 @@
 require('dotenv').config();
-const modeloLikeComment = require('./../../models').LikeComment;
+const modeloLikeComment = require('../../models').LikeComment;
 
 async function addLike(userId, commentId){
     const like= await modeloLikeComment.findOne({ where: { user_id: userId, comment_id: commentId} });
