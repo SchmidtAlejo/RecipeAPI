@@ -18,8 +18,7 @@ async function addUser(user) {
     }
     user.password = await bcrypt.hash(user.password, 8);
     const newUser = {
-        ...user, 
-        favorites: [],
+        ...user
     }
     return await modeloUsuario.create(newUser);
 }

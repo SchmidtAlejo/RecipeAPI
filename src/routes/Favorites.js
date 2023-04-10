@@ -11,9 +11,9 @@ router.post("/", decodeToken, async (req, res) => {
   }
 });
 
-router.delete("/", decodeToken, async (req, res) => {
+router.delete("/:id", decodeToken, async (req, res) => {
   try {
-    res.json(await controller.removeRecipeFavorites(req.id, req.body.recipeId));
+    res.json(await controller.removeRecipeFavorites(req.id, req.params.id));
   } catch (error) {
     res.status(401).send(error.message);
   }

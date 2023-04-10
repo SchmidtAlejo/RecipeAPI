@@ -27,7 +27,7 @@ router.put("/:id", decodeToken, async (req, res) => {
     }
   });
 
-router.get("/:id", async (req, res) => {
+router.get("/:id", decodeToken, async (req, res) => {
   try {
     res.json(await controller.getComments(req.params.id));
   } catch (error) {

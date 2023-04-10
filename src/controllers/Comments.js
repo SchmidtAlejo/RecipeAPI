@@ -9,7 +9,6 @@ async function addComment(userId, body){
 }
 
 async function getComments(recipeId){
-    console.log(modeloUsuarios);
     return {comments: await modeloComentarios.findAll({where: {recipe_id: recipeId},
     include:{
         model: modeloUsuarios
