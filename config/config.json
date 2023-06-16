@@ -1,26 +1,26 @@
 {
   "development": {
     "username": "root",
-    "password": "recipeAPI",
-    "database": "recipeapi",
-    "host": "127.0.0.1",
-    "port": "6603",
+    "password": "EphKuATGRlhsRBYRXkFB",
+    "database": "railway",
+    "host": "containers-us-west-33.railway.app",
+    "port": "5902",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "recipeAPI",
-    "database": "recipeapi",
-    "host": "127.0.0.1",
-    "port": "6603",
+    "password": "EphKuATGRlhsRBYRXkFB",
+    "database": "railway",
+    "host": "containers-us-west-33.railway.app",
+    "port": "5902",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
-    "password": "recipeAPI",
-    "database": "recipeapi",
-    "host": "127.0.0.1",
-    "port": "6603",
+    "password": "EphKuATGRlhsRBYRXkFB",
+    "database": "railway",
+    "host": "containers-us-west-33.railway.app",
+    "port": "5902",
     "dialect": "mysql"
   }
 }
