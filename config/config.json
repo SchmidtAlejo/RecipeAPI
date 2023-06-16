@@ -1,26 +1,26 @@
 {
   "development": {
-    "username": "root",
-    "password": "EphKuATGRlhsRBYRXkFB",
-    "database": "railway",
-    "host": "containers-us-west-33.railway.app",
-    "port": "5902",
+    "username": "ustltetmrzciba5j",
+    "password": "5o2zRBKNSBdJ2SxQDJ0B",
+    "database": "bnlhro0upezoj6dxftxc",
+    "host": "bnlhro0upezoj6dxftxc-mysql.services.clever-cloud.com",
+    "port": "3306",
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": "EphKuATGRlhsRBYRXkFB",
-    "database": "railway",
-    "host": "containers-us-west-33.railway.app",
-    "port": "5902",
+    "username": "ustltetmrzciba5j",
+    "password": "5o2zRBKNSBdJ2SxQDJ0B",
+    "database": "bnlhro0upezoj6dxftxc",
+    "host": "bnlhro0upezoj6dxftxc-mysql.services.clever-cloud.com",
+    "port": "3306",
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": "EphKuATGRlhsRBYRXkFB",
-    "database": "railway",
-    "host": "containers-us-west-33.railway.app",
-    "port": "5902",
+    "username": "ustltetmrzciba5j",
+    "password": "5o2zRBKNSBdJ2SxQDJ0B",
+    "database": "bnlhro0upezoj6dxftxc",
+    "host": "aws.connect.psdb.cloud",
+    "port": "3306",
     "dialect": "mysql"
   }
 }
