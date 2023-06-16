@@ -19,7 +19,7 @@
     "username": "ustltetmrzciba5j",
     "password": "5o2zRBKNSBdJ2SxQDJ0B",
     "database": "bnlhro0upezoj6dxftxc",
-    "host": "aws.connect.psdb.cloud",
+    "host": "bnlhro0upezoj6dxftxc-mysql.services.clever-cloud.com",
     "port": "3306",
     "dialect": "mysql"
   }
