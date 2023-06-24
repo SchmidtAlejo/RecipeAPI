@@ -1,5 +1,7 @@
 docker container run -d --name=recipeAPI -p 6603:3306 -e MYSQL_ROOT_PASSWORD=recipeAPI mysql
 
+npx sequelize-cli init
+
 creacion de la DB:
 npx sequelize-cli db:create
 
