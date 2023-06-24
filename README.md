@@ -23,7 +23,6 @@ mayor cantidad de likes.
 1. Clonar el repositorio.
 2. Ejecutar por consola el comando "npm install"
 3. Agregar el archivo .env con sus respectivos datos.
-4. Ejecutar el endpoint "POST: /" para generar datos de prueba. 
 
 ### Endpoints para los usuarios: 
 
