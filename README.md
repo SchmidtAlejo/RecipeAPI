@@ -18,11 +18,9 @@ mayor cantidad de likes.
 10. Ver listado de recetas guardadas en favorito.
 11. Eliminar receta del listado de favoritos.
 
-# Requerimientos:
+# Base Url:
 
-1. Clonar el repositorio.
-2. Ejecutar por consola el comando "npm install"
-3. Agregar el archivo .env con sus respectivos datos.
+https://recipeapi-production-06e1.up.railway.app
 
 ### Endpoints para los usuarios: 
 
